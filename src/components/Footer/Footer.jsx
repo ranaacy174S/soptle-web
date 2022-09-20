@@ -44,11 +44,13 @@ const Footer = () => {
                                             <img
                                                 alt=""
                                                 aria-hidden="true"
-                                                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27150%27%20height=%2780%27/%3e"
+                                                src={logo}
                                                 style={{
                                                     display: "block",
                                                     maxWidth: "100%",
-                                                    width: "initial",
+                                                    width: "50%",
+                                                    margin: "auto",
+                                                    // width: "initial",
                                                     height: "initial",
                                                     background: "none",
                                                     opacity: 1,
@@ -58,29 +60,6 @@ const Footer = () => {
                                                 }}
                                             />
                                         </span>
-                                        <img
-                                            alt="logo"
-                                            srcSet="https://groyyo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black.831cf2aa.png&w=256&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black.831cf2aa.png&w=384&q=75 2x"
-                                            src="https://groyyo.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-black.831cf2aa.png&w=384&q=75"
-                                            decoding="async"
-                                            data-nimg="intrinsic"
-                                            style={{
-                                                position: "absolute",
-                                                inset: 0,
-                                                boxSizing: "border-box",
-                                                padding: 0,
-                                                border: "none",
-                                                margin: "auto",
-                                                display: "block",
-                                                width: 0,
-                                                height: 0,
-                                                minWidth: "100%",
-                                                maxWidth: "100%",
-                                                minHeight: "100%",
-                                                maxHeight: "100%",
-                                                objectFit: "contain"
-                                            }}
-                                        />
                                         <noscript />
                                     </span>
                                     <p className="text-[20px] max-w-[230px] text-center md:text-left m-auto md:m-0 ">

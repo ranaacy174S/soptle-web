@@ -15,7 +15,9 @@ const Navbar = () => {
 
     return (
         <nav className={`flex items-center justify-between flex-wrap bg-[#fff] p-6 z-10 relative`} style={{backgroundColor: "rgb(242, 243, 247)"}}>
-            <div className="flex items-center flex-shrink-0 text-white mr-6">
+            <div className="flex items-center flex-shrink-0 text-white mr-6"
+                    onClick={() => changeRoute(ROUTES.Home)}
+            >
                 <img src={logo} alt="" className='w-40' />
             </div>
             <div className="block lg:hidden">
@@ -25,13 +27,17 @@ const Navbar = () => {
             </div>
             <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
                 <div className="text-sm lg:flex-grow">
-                    <a href="#responsive-header" className="block mt-auto lg:inline-block lg:mt-0 text-[#000] hover:text-[#e5e5e5] mr-6 text-lg font-semibold">
-                        Products
+                    <a href="javascript:void(0)" className="block mt-auto lg:inline-block lg:mt-0 text-[#000] hover:text-[#e5e5e5] mr-6 text-lg font-semibold"
+                    onClick={() => changeRoute(ROUTES.Retailer)}
+                    >
+                        Retailer
                     </a>
                     <a href="javascript:void(0)" className="block mt-auto lg:inline-block lg:mt-0 text-[#000] hover:text-[#e5e5e5] mr-6 text-lg font-semibold" onClick={() => changeRoute(ROUTES.Manufacturer)}>
                         Manufacturer
                     </a>
-                    <a href="#responsive-header" className="block mt-auto lg:inline-block lg:mt-0 text-[#000] hover:text-[#e5e5e5] text-lg font-semibold">
+                    <a href="javascript:void(0)" className="block mt-auto lg:inline-block lg:mt-0 text-[#000] hover:text-[#e5e5e5] text-lg font-semibold"
+                    onClick={() => changeRoute(ROUTES.About)}
+                    >
                         About Us
                     </a>
                 </div>

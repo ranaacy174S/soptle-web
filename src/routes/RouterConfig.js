@@ -3,6 +3,6 @@ export const ROUTES = {
     About:'/about',
     Manufacturer: '/manufacturer',
     EnquiryPage: '/rfq',
-    RetailerPage: '/retailer'
+    Retailer: '/retailer'
 
 }

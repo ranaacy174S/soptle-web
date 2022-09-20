@@ -32,7 +32,7 @@ const Router = () => {
         <Route exact path={ROUTES.About} element={<RouteWithRole Element={About} />}></Route>
         <Route exact path={ROUTES.Manufacturer} element={<RouteWithRole Element={Manufacturer} />}></Route>
         <Route exact path={ROUTES.EnquiryPage} element={<RouteWithRole Element={EnquiryPage} />}></Route>
-        <Route exact path={ROUTES.RetailerPage} element={<RouteWithRole Element={Retailer} />}></Route>
+        <Route exact path={ROUTES.Retailer} element={<RouteWithRole Element={Retailer} />}></Route>
 
 
 

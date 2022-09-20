@@ -1,6 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { ROUTES } from '../../routes/RouterConfig'
+import Carousel from "../../components/TestimonialCarousel"
+import BrandCarousel from "../../components/BrandCarousel"
+
 
 const Home = () => {
 
@@ -9,6 +12,7 @@ const Home = () => {
   const changeDir = (dir) => {
     navigate(dir)
   }
+
 
   return (
     <div className='Home' style={{ backgroundColor: "rgb(242, 243, 247)" }}>
@@ -376,8 +380,8 @@ const Home = () => {
       {/* SECTION 3 */}
 
       <section className='flex bg-black w-100 px-20 py-16'>
-        <div className="w-[30%] flex-col">
-          <h2 className='text-white text-3xl w-100 '>Powering the global supply chain</h2>
+        <div className="w-[30%] flex-col pr-3">
+          <h2 className='text-white text-3xl w-100 pb-4'>Powering the global supply chain</h2>
           <p className='text-white'>A technology platform that
             powers brands, wholesalers,
             distributors, retailers, and
@@ -391,7 +395,7 @@ const Home = () => {
               <div className="card-header py-6 flex items-center bg-orange-900 w-[100%]">
                 <h2 className='text-white text-center w-[100%]'>Z trade</h2>
               </div>
-              <div className="card-body flex flex-col items-center justify-center">
+              <div className="card-body flex flex-col items-center justify-center px-3 py-3">
                 <p className='text-black text-center my-3'>Source custom-made appereal, fabric, yarn and more
                 </p>
                 <a className='text-orange-700'>zilingotrade.com</a>
@@ -405,7 +409,7 @@ const Home = () => {
               <div className="card-header py-6 flex items-center bg-orange-900 w-[100%]">
                 <h2 className='text-white text-center w-[100%]'>Z trade</h2>
               </div>
-              <div className="card-body flex flex-col items-center justify-center">
+              <div className="card-body flex flex-col items-center justify-center px-3 py-3">
                 <p className='text-black text-center my-3'>Source custom-made appereal, fabric, yarn and more
                 </p>
                 <a className='text-orange-700'>zilingotrade.com</a>
@@ -419,7 +423,7 @@ const Home = () => {
               <div className="card-header py-6 flex items-center bg-orange-900 w-[100%]">
                 <h2 className='text-white text-center w-[100%]'>Z trade</h2>
               </div>
-              <div className="card-body flex flex-col items-center justify-center">
+              <div className="card-body flex flex-col items-center justify-center px-3 py-3">
                 <p className='text-black text-center my-3'>Source custom-made appereal, fabric, yarn and more
                 </p>
                 <a className='text-orange-700'>zilingotrade.com</a>
@@ -433,35 +437,23 @@ const Home = () => {
       </section>
 
       {/* SECTION 4 */}
-      <section className="flex relative h-[100%] overflow-hidden flex-row w-[100%]">
-        <img src="https://dj7u9rvtp3yka.cloudfront.net/layout/banners/promotions/ZilingoRevamp/Banner2-2p301-w2880p0-h1252p0-en_v6.jpg" className='absolute w-100%' alt="" />
-        <div className='w-[50%] px-20 py-16 z-[100]'>
-          <h2>Source custom-made apparel,
-            fabric, yarn and more</h2>
-          <h3>
-            Source from our trusted manufacturers and suppliers in Bangladesh,
-            India, Sri Lanka, Thailand, Indonesia, Vietnam & more regions
-          </h3>
-          <ul className='list-inside list-disc'>
-            <li>Brands can launch collection faster with less hassle</li>
-            <li>Brands can launch collection faster with less hassle</li>
-            <li>Brands can launch collection faster with less hassle</li>
-            <li>Brands can launch collection faster with less hassle</li>
+      <section className="flex relative h-[100%] overflow-hidden flex-col items-center justify-center w-[100%] bg-[#000352]">
+        <div className='w-[100%] flex items-center flex-col py-6'>
 
-          </ul>
-          <p>Low MDQ | Quick Turnaround Time | Wide Price Range | Multiple Categories</p>
+          <p className='text-l text-white'>END TO END TRANSPARENCY</p>
+          <h3 className='text-2xl w-[30%] text-center mt-6 text-white'>Real-time visibility across
+            departments and factory floor</h3>
 
-          <button className='font-bold'>
-            Source Now
-          </button>
+          <button className='p-3 bg-blue-600 text-white rounded-sm mt-6'>Contact Us</button>
         </div>
-        <div className='w-[50%]'>
+        <img alt="Banner image"
+          // style="position: absolute; width: 100%; height: 100%; left: 0px; transition-duration: 0.3s; opacity: 1;" 
+          src="https://dj7u9rvtp3yka.cloudfront.net/layout/banners/promotions/FactoryNew/IconsNew-1p422-w2732p0-h1922p0-en_v1.jpg" />
 
-        </div>
       </section>
 
       {/* SECTION 5 */}
-      <section className="flex relative h-[100%] overflow-hidden flex-row w-[100%]">
+      {/* <section className="flex relative h-[100%] overflow-hidden flex-row w-[100%]">
         <img src="https://dj7u9rvtp3yka.cloudfront.net/layout/banners/promotions/ZilingoRevamp/Banner6-2p301-w2880p0-h1252p0-en_v6.png" className='absolute w-[100]%' alt="" />
         <div className="w-[50%]"></div>
         <div className='w-[50%] px-20 py-16 z-[100]'>
@@ -484,19 +476,89 @@ const Home = () => {
             Source Now
           </button>
         </div>
-      </section>
+      </section> */}
 
 
       {/* SECTION 6 */}
-      
+
       <section className="flex flex-col px-20 py-16">
-        <h2 className='text-center text-3xl'>Our Presence</h2>
+        <h2 className='text-center text-3xl pb-10'>Our Presence</h2>
+
+        <div className="flex w-[100%] justify-between">
+          <div className="w-[10%] justify-between flex flex-col">
+            <div className="">
+              <h2 className='text-xl'>20+</h2>
+              <p>Brands</p>
+            </div>
+            <div className="">
+              <h2 className='text-xl'>300+</h2>
+              <p>Employees</p>
+            </div>
+            <div className="">
+              <h2 className='text-xl'>17</h2>
+              <p>Cities</p>
+            </div>
+          </div>
+          <div className="flex items-center flex-col w-[80%]">
+            <div className="">
+              <h2 className='text-xl'>20+</h2>
+              <p>Brands</p>
+            </div>
+            <img className='w-[50%]' src="https://www.ripplr.in/images/india-map.svg" alt="" />
+          </div>
+          <div className="w-[10%] justify-between flex flex-col">
+            <div className="">
+              <h2 className='text-xl'>20+</h2>
+              <p>Brands</p>
+            </div>
+            <div className="">
+              <h2 className='text-xl'>300+</h2>
+              <p>Employees</p>
+            </div>
+            <div className="">
+              <h2 className='text-xl'>17</h2>
+              <p>Cities</p>
+            </div>
+          </div>
+        </div>
 
       </section>
 
+
+      {/* SECTION 7 */}
+      <section>
+      </section>
+
+      {/* SECTION 8 */}
+
+      <section>
+        <section className='flex flex-col'>
+          <h2  className='text-3xl py-20 text-center'>
+            Our Customers
+          </h2>
+          <div>
+            <BrandCarousel />
+          </div>
+        </section>
+      </section>
+
+
+
+      {/* Section 9 */}
+      <section className='flex flex-col py-20'>
+        <h2 className='text-3xl py-10 text-center'>
+          Powering innovation at 20,000+ companies worldwide
+        </h2>
+        <div>
+          <Carousel />
+        </div>
+      </section>
 
     </div>
   )
 }
 
+
 export default Home
+
+
